@@ -1,0 +1,4 @@
+*.pdb
+2017/c#/obj
+2017/c#/bin
+.vscode
