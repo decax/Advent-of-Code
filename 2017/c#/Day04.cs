@@ -22,16 +22,10 @@ namespace Advent_of_Code
             var total = 0;
 
             foreach (var line in data) {
-                var words = line.Split(' ');
-                var l = new List<string>();
+                var hs = new HashSet<string>();
                 bool valid = true;
-                foreach (var word in words) {
-                    if (l.Contains(word)) {
-                        valid = false;
-                    }
-                    else {
-                        l.Add(word);
-                    }
+                foreach (var word in line.Split(' ')) {
+                    valid &= hs.Add(word);
                 }
 
                 if (valid) {
@@ -47,17 +41,11 @@ namespace Advent_of_Code
             var total = 0;
 
             foreach (var line in data) {
-                var words = line.Split(' ');
-                var l = new List<string>();
+                var hs = new HashSet<string>();
                 bool valid = true;
-                foreach (var word in words) {
+                foreach (var word in line.Split(' ')) {
                     var sortedWord = String.Concat(word.OrderBy(c => c));
-                    if (l.Contains(sortedWord)) {
-                        valid = false;
-                    }
-                    else {
-                        l.Add(sortedWord);
-                    }
+                    valid &= hs.Add(sortedWord);
                 }
 
                 if (valid) {
