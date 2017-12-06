@@ -10,6 +10,7 @@ namespace Advent_of_Code
             var day02 = new Day02();
             var day03 = new Day03();
             var day04 = new Day04();
+            var day05 = new Day05();
         }
     }
 }
