@@ -9,10 +9,10 @@ func Day01() {
 }
 
 fileprivate func Part1(numbers: [Int]) {
-    for x in numbers {
-        for y in numbers {
-            if x != y && x + y == 2020 {
-                print(x * y)
+    for x in 0..<numbers.count {
+        for y in x..<numbers.count {
+            if numbers[x] + numbers[y] == 2020 {
+                print(numbers[x] * numbers[y])
                 return
             }
         }
@@ -20,11 +20,11 @@ fileprivate func Part1(numbers: [Int]) {
 }
 
 fileprivate func Part2(numbers: [Int]) {
-    for x in numbers {
-        for y in numbers {
-            for z in numbers {
-                if x != y && x != z && y != z && x + y + z == 2020 {
-                    print(x * y * z)
+    for x in 0..<numbers.count {
+        for y in x..<numbers.count {
+            for z in y..<numbers.count {
+                if numbers[x] + numbers[y] + numbers[z] == 2020 {
+                    print(numbers[x] * numbers[y] * numbers[z])
                     return
                 }
             }
