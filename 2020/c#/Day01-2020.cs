@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Collections.Generic;
 
 namespace AdventOfCode.Year2020
 {
@@ -10,38 +9,38 @@ namespace AdventOfCode.Year2020
 		public Day01()
 		{
 			var data = File.ReadAllLines("day01.data");
-			var numbers = data.Select((x) => int.Parse(x));
+			var numbers = data.Select(x => int.Parse(x)).ToArray();
 
 			Part1(numbers);
 			Part2(numbers);
 		}
 
-		void Part1(IEnumerable<int> numbers)
+		void Part1(int[] numbers)
 		{
-			foreach (var x in numbers)
+			for (int x = 0; x < numbers.Length; x++)
 			{
-				foreach (var y in numbers)
+				for (int y = x; y < numbers.Length; y++)
 				{
-					if (x != y && x + y == 2020)
+					if (numbers[x] + numbers[y] == 2020)
 					{
-						Console.WriteLine($"{x * y}");
+						Console.WriteLine($"{numbers[x] * numbers[y]}");
 						return;
 					}
 				}
 			}
 		}
 
-		void Part2(IEnumerable<int> numbers)
+		void Part2(int[] numbers)
 		{
-			foreach (var x in numbers)
+			for (int x = 0; x < numbers.Length; x++)
 			{
-				foreach (var y in numbers)
+				for (int y = x; y < numbers.Length; y++)
 				{
-					foreach (var z in numbers)
+					for (int z = y; z < numbers.Length; z++)
 					{
-						if (x != y && x != z && y != z && x + y + z == 2020)
+						if (numbers[x] + numbers[y] + numbers[z] == 2020)
 						{
-							Console.WriteLine($"{x * y * z}");
+							Console.WriteLine($"{numbers[x] * numbers[y] * numbers[z]}");
 							return;
 						}
 					}
