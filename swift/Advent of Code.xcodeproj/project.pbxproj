@@ -17,6 +17,7 @@
 		449E9EA4257746B6001C0A1A /* Day01-2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E9EA3257746B6001C0A1A /* Day01-2015.swift */; };
 		44B1901D257BC79500200754 /* Day05-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1901C257BC79500200754 /* Day05-2020.swift */; };
 		44B19020257D17F500200754 /* Day06-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1901F257D17F500200754 /* Day06-2020.swift */; };
+		44B19027257D53D700200754 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B19026257D53D700200754 /* StringUtils.swift */; };
 		44E044F22577CA9A001A2864 /* Day02-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E044F12577CA9A001A2864 /* Day02-2020.swift */; };
 		44E044F52579297B001A2864 /* Day03-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E044F42579297B001A2864 /* Day03-2020.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		449E9EA3257746B6001C0A1A /* Day01-2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day01-2015.swift"; path = "2015/Day01-2015.swift"; sourceTree = "<group>"; };
 		44B1901C257BC79500200754 /* Day05-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day05-2020.swift"; path = "2020/Day05-2020.swift"; sourceTree = "<group>"; };
 		44B1901F257D17F500200754 /* Day06-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day06-2020.swift"; path = "2020/Day06-2020.swift"; sourceTree = "<group>"; };
+		44B19026257D53D700200754 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		44E044F12577CA9A001A2864 /* Day02-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day02-2020.swift"; path = "2020/Day02-2020.swift"; sourceTree = "<group>"; };
 		44E044F42579297B001A2864 /* Day03-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day03-2020.swift"; path = "2020/Day03-2020.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		4466184C257714740079960C = {
 			isa = PBXGroup;
 			children = (
+				44B19025257D53AF00200754 /* Utils */,
 				449E9EA2257746AB001C0A1A /* 2015 */,
 				4466186A25773F460079960C /* 2018 */,
 				446618722577420F0079960C /* 2019 */,
@@ -117,6 +120,14 @@
 				449E9EA3257746B6001C0A1A /* Day01-2015.swift */,
 			);
 			name = 2015;
+			sourceTree = "<group>";
+		};
+		44B19025257D53AF00200754 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				44B19026257D53D700200754 /* StringUtils.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4466186E25773F5E0079960C /* Day03-2018.swift in Sources */,
+				44B19027257D53D700200754 /* StringUtils.swift in Sources */,
 				449E9EA4257746B6001C0A1A /* Day01-2015.swift in Sources */,
 				44661874257742240079960C /* Day01-2019.swift in Sources */,
 				4466187025773F5E0079960C /* Day02-2018.swift in Sources */,

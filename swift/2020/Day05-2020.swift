@@ -31,10 +31,10 @@ struct Ticket {
     
     init(_ s: String) {
         
-        let rowPart = s[s.startIndex..<s.index(s.startIndex, offsetBy: 7)]
+        let rowPart = s[0..<7]
         row = rowPart.enumerated().reduce(0) { (val, arg1) in let (index, char) = arg1; return val | (char == "B" ? 1 << (rowPart.count - index) : 0) }
         
-        let columnPart = s[s.index(s.startIndex, offsetBy: 7)..<s.endIndex]
+        let columnPart = s[7..<9]
         column = columnPart.enumerated().reduce(0) { (val, arg1) in let (index, char) = arg1; return val | (char == "R" ? 1 << (columnPart.count - index) : 0) }
     }
 }

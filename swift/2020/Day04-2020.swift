@@ -57,7 +57,7 @@ fileprivate func IsFieldValid(field: String, value: String) -> Bool {
         }
         
     case "hgt":
-        if let number = Int(value[value.startIndex..<value.index(value.endIndex, offsetBy: -2)]) {
+        if let number = Int(value[0..<value.count - 2]) {
             if value.hasSuffix("cm") {
                 return number >= 150 && number <= 193
             } else if (value.hasSuffix("in")) {
@@ -66,7 +66,7 @@ fileprivate func IsFieldValid(field: String, value: String) -> Bool {
         }
         
     case "hcl":
-        let number = value[value.index(value.startIndex, offsetBy: 1)..<value.endIndex]
+        let number = value[1..<value.count]
         return value.hasPrefix("#") && number.count == 6 && Int(number, radix: 16) != nil
         
     case "ecl":
