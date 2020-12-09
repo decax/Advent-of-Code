@@ -15,9 +15,11 @@
 		4466187025773F5E0079960C /* Day02-2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466186D25773F5E0079960C /* Day02-2018.swift */; };
 		44661874257742240079960C /* Day01-2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44661873257742240079960C /* Day01-2019.swift */; };
 		449E9EA4257746B6001C0A1A /* Day01-2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E9EA3257746B6001C0A1A /* Day01-2015.swift */; };
+		44A51E1E257E649F003A91ED /* Day07-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A51E1D257E649F003A91ED /* Day07-2020.swift */; };
 		44B1901D257BC79500200754 /* Day05-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1901C257BC79500200754 /* Day05-2020.swift */; };
 		44B19020257D17F500200754 /* Day06-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1901F257D17F500200754 /* Day06-2020.swift */; };
 		44B19027257D53D700200754 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B19026257D53D700200754 /* StringUtils.swift */; };
+		44B946A4257FB7C8005A113B /* Day08-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B946A3257FB7C8005A113B /* Day08-2020.swift */; };
 		44E044F22577CA9A001A2864 /* Day02-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E044F12577CA9A001A2864 /* Day02-2020.swift */; };
 		44E044F52579297B001A2864 /* Day03-2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E044F42579297B001A2864 /* Day03-2020.swift */; };
 /* End PBXBuildFile section */
@@ -44,9 +46,11 @@
 		4466186D25773F5E0079960C /* Day02-2018.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day02-2018.swift"; path = "2018/Day02-2018.swift"; sourceTree = "<group>"; };
 		44661873257742240079960C /* Day01-2019.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day01-2019.swift"; path = "2019/Day01-2019.swift"; sourceTree = "<group>"; };
 		449E9EA3257746B6001C0A1A /* Day01-2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day01-2015.swift"; path = "2015/Day01-2015.swift"; sourceTree = "<group>"; };
+		44A51E1D257E649F003A91ED /* Day07-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day07-2020.swift"; path = "2020/Day07-2020.swift"; sourceTree = "<group>"; };
 		44B1901C257BC79500200754 /* Day05-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day05-2020.swift"; path = "2020/Day05-2020.swift"; sourceTree = "<group>"; };
 		44B1901F257D17F500200754 /* Day06-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day06-2020.swift"; path = "2020/Day06-2020.swift"; sourceTree = "<group>"; };
 		44B19026257D53D700200754 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		44B946A3257FB7C8005A113B /* Day08-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day08-2020.swift"; path = "2020/Day08-2020.swift"; sourceTree = "<group>"; };
 		44E044F12577CA9A001A2864 /* Day02-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day02-2020.swift"; path = "2020/Day02-2020.swift"; sourceTree = "<group>"; };
 		44E044F42579297B001A2864 /* Day03-2020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Day03-2020.swift"; path = "2020/Day03-2020.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,8 @@
 				4422D367257A6F7700C4B940 /* Day04-2020.swift */,
 				44B1901C257BC79500200754 /* Day05-2020.swift */,
 				44B1901F257D17F500200754 /* Day06-2020.swift */,
+				44A51E1D257E649F003A91ED /* Day07-2020.swift */,
+				44B946A3257FB7C8005A113B /* Day08-2020.swift */,
 			);
 			name = 2020;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4466186E25773F5E0079960C /* Day03-2018.swift in Sources */,
+				44B946A4257FB7C8005A113B /* Day08-2020.swift in Sources */,
 				44B19027257D53D700200754 /* StringUtils.swift in Sources */,
 				449E9EA4257746B6001C0A1A /* Day01-2015.swift in Sources */,
+				44A51E1E257E649F003A91ED /* Day07-2020.swift in Sources */,
 				44661874257742240079960C /* Day01-2019.swift in Sources */,
 				4466187025773F5E0079960C /* Day02-2018.swift in Sources */,
 				44E044F22577CA9A001A2864 /* Day02-2020.swift in Sources */,
